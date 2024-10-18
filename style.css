@@ -1,0 +1,7 @@
+:root {
+	--brand-color: #121212; /* Declare it. */
+}
+
+.brand-color {
+	color: var(--brand-color); /* Reference it. */
+}
