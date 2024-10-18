@@ -13,3 +13,15 @@ body {
 		--root-size: 1.5rem;
 	}
 }
+
+@media (min-width: 800px) {
+	.responsive-row {
+		flex-direction: row;
+	}
+}
+
+@media print {
+	:root {
+		--root-size: 1rem;
+	}
+}
