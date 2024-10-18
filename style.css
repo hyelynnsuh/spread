@@ -8,7 +8,7 @@ body {
 	font-family: system-ui, sans-serif;
 }
 
-@media (min-width: 600 px) {
+@media (min-width: 600px) {
 	:root {
 		--root-size: 1.5rem;
 	}
