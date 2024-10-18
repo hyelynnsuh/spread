@@ -1,7 +1,15 @@
 :root {
-	--brand-color: #121212; /* Declare it. */
+	--root-size: 1.2rem;
+	--fg-color: #000;
 }
 
-.brand-color {
-	color: var(--brand-color); /* Reference it. */
+body {
+	font-size: var(--root-size);
+	font-family: system-ui, sans-serif;
+}
+
+@media (min-width: 600 px) {
+	:root {
+		--root-size: 1.5rem;
+	}
 }
