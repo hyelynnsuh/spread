@@ -4,50 +4,32 @@
 }
 
 body {
+	font-family: "DM Sans";
 	font-size: var(--root-size);
 	padding: var(--root-size); 
 	/* <uniquifier>: Use a unique and descriptive class name
 	<weight>: Use a value from 100 to 1000 */
-
-.dm-sans-<uniquifier> {
-	font-family: "DM Sans", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;
-	/* <uniquifier>: Use a unique and descriptive class name
-	<weight>: Use a value from 200 to 800 */
-
-.newsreader-<uniquifier> 
-	font-family: "Newsreader", serif;
-	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;
-	/* <uniquifier>: Use a unique and descriptive class name
-	<weight>: Use a value from 400 to 900 */
-
-.playfair-display-<uniquifier> 
-	font-family: "Playfair Display", serif;
-	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;
-
-}
 }
 
 h1 {
+	font-family: "Newsreader";
 	font-size: calc(var(--root-size) * 2);
 	text-align: center;
+
 }
 
 .sitename {
+	font-family: "Playfair Display";
 	text-align: center;
 }
 
 .labels {
+
 	text-align: center;
 }
 
 .written {
+
 	text-align: center;
 }
 
