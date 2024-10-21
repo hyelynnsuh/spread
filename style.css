@@ -55,6 +55,28 @@ summary {
 	padding-top: 1.5%;
 }
 
+h2 {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#container {
+	background-color: red;
+	border: red solid;
+}
+
+#wallpaper {
+	background-color: blue;
+	border: blue solid;
+}
+
+section {
+	background-color: white;
+	filter: drop-shadow(0 0 0.75rem gray);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
 @media (min-width: 600px) {
 	:root {
 		--root-size: 1.5rem;
