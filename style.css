@@ -29,8 +29,10 @@ h1 {
 }
 
 .written {
-
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: row;
+	justify-content: space-between;
 }
 
 @media (min-width: 600px) {
