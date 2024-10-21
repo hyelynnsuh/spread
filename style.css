@@ -6,6 +6,11 @@
 body {
 	font-size: var(--root-size);
 	font-family: system-ui, sans-serif;
+	padding: var(--root-size); 
+}
+
+h1 {
+	font-size: calc(var(--root-size) * 2);
 }
 
 @media (min-width: 600px) {
