@@ -6,7 +6,7 @@
 body {
 	font-family: "DM Sans";
 	font-size: var(--root-size);
-	padding: var(--root-size); 
+	/* padding: var(--root-size);  */
 	/* <uniquifier>: Use a unique and descriptive class name
 	<weight>: Use a value from 100 to 1000 */
 }
@@ -15,17 +15,26 @@ h1 {
 	font-family: "Newsreader";
 	font-size: calc(var(--root-size) * 2);
 	text-align: center;
-
+	padding: var(--root-size);
+	font-weight: 600;
 }
 
 .sitename {
 	font-family: "Playfair Display";
 	text-align: center;
+	font-size: larger;
+	background-color: #000;
+	color: white;
+	padding: 2%;
+	font-style: italic;
+	font-weight: bold;
 }
 
 .labels {
-
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: row;
+	justify-content: space-between;
 }
 
 .written {
@@ -34,14 +43,16 @@ h1 {
 	align-items: row;
 	justify-content: center;
 	border-bottom: solid;
-	column-gap: 2%;
+	column-gap: 0.5%;
+	font-size: smaller;
+	font-weight: 600;
 }
 
 summary {
 	font-family: "Newsreader";
 	font-size: calc(var(--root-size) * 1.5);
 	border-bottom: solid;
-	padding-top: 2%;
+	padding-top: 1.5%;
 }
 
 @media (min-width: 600px) {
