@@ -9,6 +9,7 @@ body {
 	/* padding: var(--root-size);  */
 	/* <uniquifier>: Use a unique and descriptive class name
 	<weight>: Use a value from 100 to 1000 */
+
 }
 
 h1 {
@@ -61,32 +62,32 @@ h2 {
 }
 
 #container > h2{
-	background-color: red;
+	background-color: #FFD9ED;
 	padding: 5%;
 }
 
 #wallpaper > h2 {
-	background-color: blue;
+	background-color: #CAC7FC;
 	padding: 5%;
 }
 
 #dna > h2 {
-	background-color: purple;
+	background-color: #DBFBC8;
 	padding: 5%;
 }
 
 #formula > h2 {
-	background-color: yellow;
+	background-color: #E2EDFF;
 	padding: 5%;
 }
 
 #customised > h2 {
-	background-color: green;
+	background-color: #F7E4B4;
 	padding: 5%;
 }
 
 #generative > h2 {
-	background-color: indigo;
+	background-color: #F7C6C7;
 	padding: 5%;
 }
 
@@ -94,10 +95,15 @@ section {
 	overflow: hidden;
 	background-color: white;
 	filter: drop-shadow(0 0 0.75rem gray);
-	border-bottom-right-radius: 5%;
-	border-bottom-left-radius: 5%;
-	border-top-left-radius: 5%;
-	border-top-right-radius: 5%;
+	border-bottom-right-radius: 15PX;
+	border-bottom-left-radius: 15PX;
+	border-top-left-radius: 15PX;
+	border-top-right-radius: 15px;
+	margin-bottom: 10%;
+}
+
+section > p {
+	padding: 5%;
 }
 
 @media (min-width: 600px) {
