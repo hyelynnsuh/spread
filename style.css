@@ -52,10 +52,26 @@ h1 {
 summary {
 	font-family: "Newsreader";
 	font-size: calc(var(--root-size) * 1.5);
-	border-bottom: solid;
 	padding-top: 1.5%;
+	cursor: pointer;
+	border-bottom: solid;
 }
 
+  .maindetails>summary::after {
+	content: ' + ';
+	text-align: Right
+  }
+  
+  .maindetails[open]>summary::after {
+	content: ' - ';
+	text-align: Right;
+	font-weight: lighter;
+  }
+
+  details[open] {
+	border-bottom: solid;
+  }
+  
 h2 {
 	font-family: "Newsreader";
 	font-size: calc(var(--root-size) * 1.2) ;
@@ -106,13 +122,21 @@ section > p {
 	padding: 5%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 375px) {
+	/* mobile width */
 	:root {
 		--root-size: 1.5rem;
 	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: 827px) {
+	/* tablet width */
+	:root {
+		--root-size: 1.5rem;
+	}
+
+@media (min-width: 1280px) {
+	/* desktop width */
 	.responsive-row {
 		flex-direction: row;
 	}
