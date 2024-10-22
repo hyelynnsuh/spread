@@ -122,8 +122,9 @@ section > p {
 	padding: 1.5rem;
 }
 
-@media (min-width: 375px) {
 	/* mobile width */
+
+@media (min-width: 375px) {
 	:root {
 		--root-size: 1.5rem;
 	}
@@ -137,21 +138,10 @@ section > p {
 
 }
 
-@media (min-width: 827px) {
-	/* tablet width */
-	:root {
-		--root-size: 1.5rem;
-	}
-	main {
-		max-width: 35rem;
-	}
-	section > p {
-		font-size: 1.2rem;
-	}
-}
+	/* DESKTOP */
 
 @media (min-width: 1280px) {
-	/* desktop width */
+
 	/* .responsive-row {
 		flex-direction: row;
 	} */
