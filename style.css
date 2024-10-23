@@ -12,7 +12,6 @@ body {
 	<weight>: Use a value from 100 to 1000 */
 }
 
-
 h1 {
 	font-family: "Newsreader";
 	font-size: calc(var(--root-size) * 2);
@@ -34,14 +33,12 @@ h1 {
 .labels {
 	display: flex;
 	flex-direction: row;
-	align-items: row;
 	justify-content: space-between;
 }
 
 .written {
 	display: flex;
 	flex-direction: row;
-	align-items: row;
 	justify-content: center;
 	border-bottom: solid;
 	column-gap: 0.5%;
@@ -49,15 +46,7 @@ h1 {
 	font-weight: 600;
 }
 
-summary {
-	font-family: "Newsreader";
-	font-size: calc(var(--root-size) * 1.5);
-	padding-top: 1.5%;
-	cursor: pointer;
-	border-bottom: solid;
-}
-
-  .maindetails>summary::after {
+  /* .maindetails>summary::after {
 	content: ' + ';
 	text-align: Right
   }
@@ -69,8 +58,38 @@ summary {
 
   details[open] {
 	border-bottom: solid;
-  }
+  } */
   
+
+
+.container {
+	display: flex;
+	/* justify-content: space-between; */
+	min-height: 100vh;
+	gap: 20px;
+}
+
+.sidebar {
+	width: 20%;
+	background-color: white;
+}
+
+.content {
+	width: 60%;
+}
+
+
+
+summary {
+	font-family: "Newsreader";
+	font-size: calc(var(--root-size) * 1.5);
+	padding-top: 1.5%;
+	cursor: pointer;
+	border-bottom: solid;
+}
+
+
+
 h2 {
 	font-family: "Newsreader";
 	font-size: calc(var(--root-size) * 1.2) ;
@@ -128,14 +147,36 @@ section > p {
 	:root {
 		--root-size: 1.5rem;
 	}
-	main {
-		max-width: 20rem;
-		margin: auto;
-	}
-	section > p {
-		font-size: 1rem;
+
+	.container {
+		flex-direction: column;
+		gap: 10px;
 	}
 
+	.sidebar,
+	.content {
+		width: 100%;
+		padding: 15px;
+	}
+
+	.leftsidebar details {
+		order: 1
+	}
+
+	.rightsidebar details {
+		order: 1;
+	}
+	
+	.content {
+		order: 2;
+	}
+
+
+	/* main {
+		max-width: 20rem;
+		margin: auto;
+	} */
+	
 }
 
 	/* DESKTOP */
@@ -154,13 +195,25 @@ section > p {
 		font-size: 1.2rem;
 	}
 
-	details:nth-child(1),
-	details:nth-child(2),
-	div:nth-child(3) {
-		display: flex;
+	section > p {
+		font-size: 1rem;
+	}
+
+	.container {
 		flex-direction: row;
-		align-items: row;
-		justify-content: space-between;
+		gap: 20px;
+	}
+
+	.leftsidebar {
+		order: 1
+	}
+
+	.content {
+		order: 2;
+	}
+
+	.rightsidebar {
+		order: 3;
 	}
 }
 
