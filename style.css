@@ -16,9 +16,9 @@
 }
 
 blockquote {
-	/* margin-left: 24px; */
+	margin-left: 24px;
 	border-left: grey solid;
-	/* padding: 24px; */
+	padding: 24px;
 }
 
 body{
@@ -117,15 +117,6 @@ footer{
 	padding: 1.5rem;
 }
 
-.labels {
-	text-align: center;
-}
-
-.author {
-	text-align: center;
-	font-size: 1.5rem;
-}
-
 summary {
 	font-size: 2rem;
 	font-family: newsreader;
@@ -177,6 +168,8 @@ section {
 
 	.tableofcontents {
 		grid-area: tableofcontents;
+		position: sticky; 
+		/* ask why position sticky isnt working */
 	}
 
 	.content {
