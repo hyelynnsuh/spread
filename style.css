@@ -168,9 +168,17 @@ section {
 
 	.tableofcontents {
 		grid-area: tableofcontents;
-		position: sticky; 
-		/* ask why position sticky isnt working */
 	}
+
+	summary {
+		padding: 2rem;
+		position: sticky;
+	}
+
+	/* .stickytoc {
+		
+		/* ask why position sticky isnt working */
+	/* } */ 
 
 	.content {
 		grid-area: content;
