@@ -17,11 +17,13 @@
 }
 
 blockquote {
-	/* margin-left: 24px; */
+	margin-left: 4rem;
+	margin-right: 1rem;
 	padding-bottom: 2rem;
 	font-family: var(--body-font-family);
 	font-size: 4rem;
-	border-top: black solid 1.5px;
+	margin-top: 2rem;
+	/* border-left: rgb(215, 215, 215) solid 1.5px; */
 }
 
 body{
@@ -77,8 +79,14 @@ h1 {
 	text-align: center;
 }
 
+.content, .card {
+	max-width: 50rem;
+	margin: auto;
+	width: 100%;
+}
+
 h2{
-	font-size: 48px;
+	font-size: 2rem;
 	font-family: newsreader;
 	font-weight: 600;
 	padding: 1.2rem;
@@ -112,7 +120,7 @@ header{
 }
 
 .summary, .tableofcontents, .content {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	width: 100%;
 }
 
@@ -191,7 +199,6 @@ section {
 	border: grey solid;
 	border-radius: 16px;
 	overflow: hidden;
-
 	max-width: 50rem;
 	margin: auto;
 	display: flex;
@@ -218,8 +225,8 @@ section {
 	}
 
 	.summary {
-	grid-column:3;
-	grid-row:3;
+		grid-column:3;
+		grid-row:3;
 
 	}
 
@@ -229,12 +236,18 @@ section {
 
 	.content{
 		grid-column:2;
+		border-top: black solid 1.5px;
+	}
+
+	.content, .card {
+		max-width: 40rem;
+		width: 100%;
 	}
 
 	#info{
 		grid-column:2;
-	display:grid;
-	grid-template-columns: 1fr 1fr;
+		display:grid;
+		grid-template-columns: 1fr 1fr;
 	}
 
 	p.labels:nth-child(1){
