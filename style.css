@@ -1,4 +1,5 @@
 :root {
+	font-size: 16px;
 	--root-size: 1.2rem;
 	--main-bg-color: white;
 	--main-text-color: black;
@@ -16,9 +17,10 @@
 }
 
 blockquote {
-	margin-left: 24px;
-	border-left: grey solid;
-	padding: 24px;
+	/* margin-left: 24px; */
+	padding-bottom: 2rem;
+	font-family: var(--body-font-family);
+	font-size: 4rem;
 }
 
 body{
@@ -38,10 +40,12 @@ body{
 	text-align: center;
 	color: white;
 	background-color: black;
+	width:100%;
 }
 
 main {
 	display: grid;
+	margin: 2rem;
 }
 
 .headercontent {
@@ -55,16 +59,18 @@ main {
 .labels {
 	font-size: 1.5rem;
 	margin: 0.5rem 0;
+	display: flex;
+	flex: auto;
 }
 
 .author {
 	font-size: 1.5rem;
-	margin: 0.5rem 0;
+	margin: 0.5rem;
 }
 
 h1 {
 	padding: 24px;
-	font-size: 84px;
+	font-size: 5rem;
 	font-family: newsreader;
 	font-weight: var(--title-font-weight);
 	text-align: center;
@@ -78,24 +84,30 @@ h2{
 }
 
 p {
-	font-size: 22px;
+	font-size: 1.2rem;
 	font-family: "DM Sans";
 	font-weight: 300;
-	line-height: 28px;
+	line-height: 2.2rem;
+	max-width: 60ch;
+	margin:auto;
 }
 
-footer{
+footer {
 	color: white;
 	background: black;
 	padding: 24px;
 }
 
+/* MOBILE GRID DEFAULT */
 
-/* defaul mobile grid */
 .container {
 	display: grid;
 	gap: 1rem;
 	padding: 1rem;
+}
+
+header{
+	width:100%;
 }
 
 .summary, .tableofcontents, .content {
@@ -103,11 +115,49 @@ footer{
 	width: 100%;
 }
 
-/* Card Section */
+/* CARDS */
+section{
+	position:sticky;
+
+}
 .card {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	position:sticky;
+	top:50px;
+	background-color:white;
 }
+#container{
+	position:sticky;
+	top:50px;
+}
+
+#wallpaper{
+	position:sticky;
+	top:125px;
+}
+
+#dna{
+	position:sticky;
+	top:200px;
+}
+
+#formula{
+	position:sticky;
+	top:275px;
+}
+
+#customised{
+	position:sticky;
+	top:350px;
+}
+
+#generative{
+	position:sticky;
+	top:425px;
+}
+
+
 
 .card-title {
 	background-color: yellow;
@@ -117,12 +167,22 @@ footer{
 	padding: 1.5rem;
 }
 
+
+
+/* SUMMARY AND TOC */
+
 summary {
 	font-size: 2rem;
 	font-family: newsreader;
 	font-weight: 600;
+	max-width:40ch;
+	margin: auto;
+}
+
+details{
 	border-top: black solid;
 	border-bottom: black solid;
+	padding: 30px;
 }
 
 section {
@@ -135,21 +195,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-
 }
-
-	/* TEMPORARY - IPHONE */
-
-/* @media (min-width: 565px) {
-	.container {
-		grid-template-columns: 1fr;
-	}
-
-	.summary, .tableofcontents, .content {
-		margin: 0 auto;
-		width: 100%;
-	}
-} */
 
 	/* DESKTOP */
 
@@ -157,37 +203,65 @@ section {
 	
 	.container {
 		grid-template-columns: 1fr 2fr 1fr;
-		grid-template-areas:
-			"header header header"
-			"tableofcontents content summary"
+	}
+
+	.headercontent{
+		grid-column:1 / span 3;
+	}
+
+	.labels {
+		font-size: 1.5rem;
+		margin: 0.5rem 0;
+		display: flex;		
 	}
 
 	.summary {
-		 grid-area: summary;
+	grid-column:3;
+	grid-row:3;
+
 	}
 
 	.tableofcontents {
-		grid-area: tableofcontents;
+		grid-column:1;
+	}
+
+
+
+	.content{
+		grid-column:2;
+	}
+
+	#info{
+		grid-column:2;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	}
+
+	p.labels:nth-child(1){
+		text-align:left;
+	}
+
+	p.lables:nth-child(2){
+		text-align:end;
+	}
+
+	#stickytest{
+		color:red;
+		border: 3px solid red;
+		position:sticky;
+		top:0px;
+	}
+
+	.aside {
+		display: grid;
+		gap: 1rem;
+		padding: 1rem;
+		height: 100vh; /* or another height */
 	}
 
 	summary {
-		padding: 2rem;
 		position: sticky;
 	}
-
-	/* .stickytoc {
-		
-		/* ask why position sticky isnt working */
-	/* } */ 
-
-	.content {
-		grid-area: content;
-	}
-
-	.headercontent {
-		grid-column: 1/-1;
-	}
-
 }
 
 @media print {
