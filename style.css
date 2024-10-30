@@ -91,7 +91,7 @@ h1 {
 
 h2{
 	font-size: 2rem;
-	font-family: newsreader;
+	font-family: "newsreader";
 	font-weight: 600;
 	padding: 1.2rem;
 }
@@ -175,7 +175,7 @@ section{
 }
 .card-content {
 	padding: 1.5rem;
-	background-color:white;
+	background-color: white;
 }
 
 
@@ -193,13 +193,15 @@ summary {
 details{
 	border-top: black solid 1.5px;
 	border-bottom: black solid 1.5px;
+	margin: auto;
+	max-width:53ch;
 	padding: 20px;
 }
 
 /* SECTIONS */
 
 section {
-	border: grey solid;
+	/* border: #d6d6d6 solid; */
 	border-radius: 16px;
 	overflow: hidden;
 	max-width: 50rem;
@@ -207,11 +209,18 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	filter: drop-shadow(0 0.75rem 0.75rem #f4f4f4);
+
 }
 
 	/* DESKTOP */
 
 @media (min-width: 1280px) {
+
+	main {
+		max-width: 120ch;
+	}
+
 	
 	.container {
 		grid-template-columns: 1fr 2fr 1fr;
@@ -280,6 +289,87 @@ section {
 	}
 }
 
+@media (min-width: 2560px) {
+
+	main {
+		max-width: 120ch;
+	}
+
+	h1 {
+		font-size: 6rem;
+	}
+
+	p {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+	}
+
+}
+
 @media print {
 
 }
+
+@media (prefers-color-scheme: dark) {
+	
+	.sitename {
+		background-color: #808080;
+		color: black;
+	}
+
+	footer {
+		background-color: #808080;
+	}
+	
+	body {
+		background-color: #121212;
+	}
+
+	h1 {
+		color: #f4f4f4;
+	}
+
+	h2 {
+		background-color: #f4f4f4;
+	}
+
+	blockquote{
+		color: #808080;
+	}
+
+	section {
+		filter: drop-shadow(0 0.75rem 0.75rem black);
+	}
+
+	.summary {
+		color: #f4f4f4;
+	}
+
+	details{
+		border-top: #f4f4f4 solid 1.5px;
+		border-bottom: #f4f4f4 solid 1.5px;
+		padding: 20px;
+	}
+
+	.tableofcontents {
+		color: #f4f4f4;
+	}
+
+	p {
+		color: #f4f4f4;
+	}
+
+	section {
+		border: none;
+	}
+
+	.card-content {
+		background-color: #313131;
+		color: #f4f4f4;
+	}
+
+	.content{
+		border-top: white solid 1.5px;
+	}
+
+	}
