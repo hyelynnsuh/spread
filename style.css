@@ -6,7 +6,7 @@
 
 /* TITLE */
 	--title-font-family: "Newsreader", serif;
-	--title-font-weight: 600;
+	--title-font-weight: 500;
 	--title-font-style: normal;
 
 /* BODY */
@@ -20,9 +20,13 @@ blockquote {
 	margin-left: 4rem;
 	margin-right: 1rem;
 	padding-bottom: 2rem;
-	font-family: var(--body-font-family);
-	font-size: 4rem;
+	font-family: var(--title-font-family);
+	font-size: 1.8rem;
 	margin-top: 2rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #F79494;
+	/* font-style: italic; */
 	/* border-left: rgb(215, 215, 215) solid 1.5px; */
 }
 
@@ -36,7 +40,7 @@ body{
 	padding-top: 72px;
 	padding-bottom: 48px;
 	margin-bottom: 24px;
-	font-size: 56px;
+	font-size: 2rem;
 	font-family: "Playfair Display";
 	font-weight: 600;
 	font-style: italic;
@@ -48,7 +52,8 @@ body{
 
 main {
 	display: grid;
-	margin: 2rem;
+	margin: auto;
+	/* margin: 2rem; */
 }
 
 .headercontent {
@@ -72,8 +77,8 @@ main {
 }
 
 h1 {
-	padding: 24px;
-	font-size: 5rem;
+	/* padding: 24px; */
+	font-size: 4rem;
 	font-family: newsreader;
 	font-weight: var(--title-font-weight);
 	text-align: center;
@@ -81,7 +86,6 @@ h1 {
 
 .content, .card {
 	max-width: 50rem;
-	margin: auto;
 	width: 100%;
 }
 
@@ -96,7 +100,7 @@ p {
 	font-size: 1.2rem;
 	font-family: "DM Sans";
 	font-weight: 300;
-	line-height: 2.2rem;
+	line-height: 2rem;
 }
 
 footer {
@@ -118,7 +122,7 @@ header{
 }
 
 .summary, .tableofcontents, .content {
-	/* margin: 0 auto; */
+	margin: 0 auto;
 	width: 100%;
 }
 
@@ -179,9 +183,9 @@ section{
 /* SUMMARY AND TOC */
 
 summary {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-family: newsreader;
-	font-weight: 600;
+	font-weight: 400;
 	max-width:40ch;
 	margin: auto;
 }
@@ -215,6 +219,8 @@ section {
 
 	.headercontent{
 		grid-column:1 / span 3;
+		height: 20rem;
+		justify-content: space-evenly;
 	}
 
 	.labels {
@@ -226,8 +232,13 @@ section {
 	.summary {
 		grid-column:3;
 		grid-row:3;
-
 	}
+
+	.subtext {
+		font-size: 1rem;
+		line-height: 1.8rem;
+	}
+	
 
 	.tableofcontents {
 		grid-column:1;
