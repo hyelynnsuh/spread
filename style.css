@@ -210,7 +210,6 @@ section {
 	flex-direction: column;
 	justify-content: space-evenly;
 	filter: drop-shadow(0 0.75rem 0.75rem #f4f4f4);
-
 }
 
 	/* DESKTOP */
@@ -247,7 +246,6 @@ section {
 		font-size: 1rem;
 		line-height: 1.8rem;
 	}
-	
 
 	.tableofcontents {
 		grid-column:1;
@@ -304,21 +302,52 @@ section {
 		line-height: 2.5rem;
 	}
 
+	.subtext{
+		font-size: 1.2rem;
+	}
+
 }
 
 @media print {
+
+	header{
+		height: 8rem;
+	}
+
+	section {
+		filter: none;
+	}
+
+	body {
+		max-width: 40ch;
+		margin: auto;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.8rem;
+	}
+
+	blockquote {
+		color: #313131;
+	}
+
+
 
 }
 
 @media (prefers-color-scheme: dark) {
 	
 	.sitename {
-		background-color: #808080;
+		background-color: #f4f4f4;
 		color: black;
 	}
 
 	footer {
-		background-color: #808080;
+		background-color: #f4f4f4;
+		p{
+			color: #121212;
+		}
 	}
 	
 	body {
