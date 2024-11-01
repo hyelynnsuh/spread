@@ -251,8 +251,13 @@ section {
 	background-color: white;
 }
 
+	/* 2 COLUMN LAYOUT */
 
-	/* DESKTOP */
+@media (min-width:800px) {
+
+}
+
+	/* DESKTOP – 3 COLUMN LAYOUT */
 
 @media (min-width: 1280px) {
 
@@ -282,9 +287,19 @@ section {
 		grid-row:2;
 	}
 
+	/* .card {
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+	} */
+
 	.subtext {
 		/* font-size: 1rem; */
 		/* line-height: 1.8rem; */
+	}
+
+	#cardcontainer {
+		margin-top: 2rem;
+		margin-bottom: 3rem;
 	}
 
 	.tableofcontents {
