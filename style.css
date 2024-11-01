@@ -259,6 +259,12 @@ section {
 		max-width: 80ch;
 	}
 
+	blockquote {
+		border-top: solid black;
+		margin-top: 0;
+		padding-top: 1.2rem;
+	}
+
 	.container {
 		grid-template-columns: 1fr 2fr;
 	}
@@ -270,8 +276,8 @@ section {
 	}
 
 	aside {
-		display: flex;
-		flex-direction: column;
+		/* display: flex;
+		flex-direction: column; */
 	}
 
 	.tableofcontents {
@@ -389,6 +395,7 @@ section {
 
 }
 
+/* Print Mode */
 @media print {
 
 	header{
@@ -400,7 +407,7 @@ section {
 	}
 
 	body {
-		max-width: 40ch;
+		max-width: 55ch;
 		margin: auto;
 	}
 
@@ -412,11 +419,9 @@ section {
 	blockquote {
 		color: #313131;
 	}
-
-
-
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
 	
 	.sitename {
