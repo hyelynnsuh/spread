@@ -26,6 +26,7 @@ blockquote {
 	font-weight: 300;
 	letter-spacing: 1px;
 	color: #F79494;
+	line-height: 2rem;
 	/* font-style: italic; */
 	/* border-left: rgb(215, 215, 215) solid 1.5px; */
 }
@@ -93,7 +94,9 @@ h2{
 	font-size: 2rem;
 	font-family: "newsreader";
 	font-weight: 600;
-	padding: 1.2rem;
+	padding-left: 2rem;
+	padding-top: 1.3rem;
+	padding-bottom: 1rem;
 }
 
 p {
@@ -127,58 +130,83 @@ header{
 }
 
 /* CARDS */
-/* section{
-	position:sticky;
-} */
 
 .card {
 	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	/* position:sticky;
 	top:50px; */
 }
 
+/* card title color  */
+#container > .card-title {
+	background-color: rgb(255 196 10);
+}
+
+#wallpaper > .card-title {
+	background-color: rgb(248 222 126);
+}
+
+#dna > .card-title {
+	background-color: rgb(251 244 164);
+}
+
+#formula > .card-title {
+	background-color: rgb(196 223 255);
+}
+
+#customised > .card-title {
+	background-color: rgb(138 185 241);
+}
+
+#generative > .card-title {
+	background-color: rgb(79 146 255);
+}
+
+/* Card position sticky  */
 #container{ 
 	/* position:sticky; */
 	top:25px;
-	background-color: rgb(255 196 10);
 }
 
 #wallpaper{
 	/* position:sticky; */
 	top:65px;
-	background-color: rgb(248 222 126);
 }
 
 #dna{
 	/* position:sticky; */
 	top:105px;
-	background-color: rgb(251 244 164);
 }
 
 #formula{
 	/* position:sticky; */
-	top:145px;
-	background-color: rgb(196 223 255);
+	top:145px;	
 }
 
 #customised{
 	/* position:sticky; */
 	top:185px;
-	background-color: rgb(138 185 241);
 }
 
 #generative{
 	/* position:sticky; */
 	top:225px;
-	background-color: rgb(79 146 255);
 }
+
 .card-content {
-	padding: 1.5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 	background-color: white;
 }
 
-
+.card-content-parent {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
 
 summary {
 	font-size: 1.8rem;
@@ -209,7 +237,9 @@ section {
 	justify-content: space-evenly;
 	filter: drop-shadow(0 0.75rem 0.75rem #f4f4f4);
 	position: sticky;
+	background-color: white;
 }
+
 
 	/* DESKTOP */
 
