@@ -10,7 +10,7 @@
 	--title-font-style: normal;
 
 /* BODY */
-	--body-font-family: "Helvetica Neue", "sans serif";
+	--body-font-family: "Newsreader", "sans serif";
 	--body-font-weight: 400;
 	--body-font-style: normal;
 	
@@ -21,18 +21,18 @@ blockquote {
 	margin-right: 1rem;
 	padding-bottom: 2rem;
 	font-family: var(--title-font-family);
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	margin-top: 2rem;
 	font-weight: 300;
 	letter-spacing: 1px;
-	color: #F79494;
+	color: dodgerblue;
 	line-height: 2rem;
 	/* font-style: italic; */
 	/* border-left: rgb(215, 215, 215) solid 1.5px; */
 }
 
 body{
-	font-size: 22px;
+	font-size: 1.2rem;
 	font-family: var(--body-font-family);
 	font-weight: var(--body-font-weight);
 }
@@ -52,6 +52,7 @@ body{
 
 main {
 	display: grid;
+	max-width: 50ch;
 	margin: auto;
 	/* margin: 2rem; */
 }
@@ -88,27 +89,28 @@ h1 {
 }
 
 .content, .card {
-	max-width: 50rem;
-	width: 100%;
+	max-width: 40rem;
+	/* width: 100%; */
 }
 
 h2{
 	font-size: 2rem;
 	font-family: "newsreader";
 	font-weight: 600;
-	padding-left: 2rem;
+	padding-left: 2.5rem;
 	padding-top: 1.3rem;
 	padding-bottom: 1rem;
 }
 
 p {
 	font-size: 1.2rem;
-	line-height: 1.7rem;
+	line-height: 2rem;
 }
 
 .subtext {
-	margin-top: 1rem;
-	line-height: 1.5rem;
+	/* margin-top: 1rem;
+	line-height: 1.5rem; */
+	padding-top: 1rem;
 }
 
 
@@ -122,7 +124,7 @@ footer {
 
 .container {
 	display: grid;
-	gap: 1rem;
+	gap: 1.5rem;
 	padding: 1rem;
 }
 
@@ -140,9 +142,12 @@ header{
 .card {
 	margin-top: 2rem;
 	margin-bottom: 3rem;
+	margin-right: 2rem;
+	margin-left: 2rem;
 	/* position:sticky;
 	top:50px; */
 }
+
 
 /* card title color  */
 #container > .card-title {
@@ -171,38 +176,32 @@ header{
 
 /* Card position sticky  */
 #container{ 
-	/* position:sticky; */
 	top:25px;
 }
 
 #wallpaper{
-	/* position:sticky; */
 	top:65px;
 }
 
 #dna{
-	/* position:sticky; */
 	top:105px;
 }
 
 #formula{
-	/* position:sticky; */
 	top:145px;	
 }
 
 #customised{
-	/* position:sticky; */
 	top:185px;
 }
 
 #generative{
-	/* position:sticky; */
 	top:225px;
 }
 
 .card-content {
-	margin-left: 2rem;
-	margin-right: 2rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
 	background-color: white;
 }
 
@@ -210,8 +209,8 @@ header{
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
 }
 
 summary {
@@ -225,9 +224,15 @@ summary {
 details{
 	border-top: black solid 1.5px;
 	border-bottom: black solid 1.5px;
+	/* font-size: 1.8rem; */
 	margin: auto;
 	max-width:53ch;
 	padding: 20px;
+}
+
+li {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
 }
 
 /* SECTIONS */
@@ -236,8 +241,8 @@ section {
 	/* border: #d6d6d6 solid; */
 	border-radius: 16px;
 	overflow: hidden;
-	max-width: 50rem;
-	margin: auto;
+	/* max-width: 50rem; */
+	/* margin: 1rem; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -278,8 +283,8 @@ section {
 	}
 
 	.subtext {
-		font-size: 1rem;
-		line-height: 1.8rem;
+		/* font-size: 1rem; */
+		/* line-height: 1.8rem; */
 	}
 
 	.tableofcontents {
@@ -294,6 +299,7 @@ section {
 	.content, .card {
 		max-width: 40rem;
 		width: 100%;
+		margin: auto;
 	}
 
 	#info{
@@ -367,7 +373,7 @@ section {
 
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	
 	.sitename {
 		background-color: #f4f4f4;
@@ -421,6 +427,7 @@ section {
 
 	section {
 		border: none;
+		background-color: #313131;
 	}
 
 	.card-content {
@@ -432,4 +439,4 @@ section {
 		border-top: white solid 1.5px;
 	}
 
-	} */
+	}
