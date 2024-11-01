@@ -253,9 +253,38 @@ section {
 
 	/* 2 COLUMN LAYOUT */
 
-/* @media (min-width:800px) {
+@media (min-width:800px) {
 
-} */
+	main {
+		max-width: 80ch;
+	}
+
+	.container {
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.headercontent{
+		grid-column:1 / span 2;
+		height: 20rem;
+		justify-content: space-evenly;
+	}
+
+	aside {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.tableofcontents {
+		grid-column:1;
+		grid-row:2;
+	}
+
+	.summary {	
+		grid-column:1;
+		grid-row:2;
+	}
+
+}
 
 	/* DESKTOP – 3 COLUMN LAYOUT */
 
