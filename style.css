@@ -228,6 +228,7 @@ details{
 	margin: auto;
 	max-width:53ch;
 	padding: 20px;
+	width: 100%
 }
 
 li {
@@ -275,9 +276,15 @@ section {
 		justify-content: space-evenly;
 	}
 
-	aside {
-		/* display: flex;
-		flex-direction: column; */
+	/* aside {
+		display: flex;
+		flex-direction: column;
+	} */
+
+	aside > .tableofcontents, .summary {
+		height:50%;
+		width: 100%;
+		display: flex;
 	}
 
 	.tableofcontents {
@@ -300,6 +307,10 @@ section {
 		max-width: 120ch;
 	}
 
+	blockquote {
+		border-top: none;
+	}
+
 	.container {
 		grid-template-columns: 1fr 2fr 1fr;
 	}
@@ -319,6 +330,12 @@ section {
 	.summary {
 		grid-column:3;
 		grid-row:2;
+	}
+
+	aside > .tableofcontents, .summary {
+		height:50%;
+		width: 100%;
+		display: inline-block;
 	}
 
 	/* .card {
